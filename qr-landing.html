@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>TraceMyMeal — Scan Result</title>
+<style>
+:root{--accent:#0f6f42;--bg:#f3f4f6;--muted:#6b7280}
+body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#111}
+.container{max-width:780px;margin:20px auto;padding:18px}
+.card{background:#fff;padding:14px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.06);margin-bottom:12px}
+.header{background:var(--accent);color:#fff;padding:12px;border-radius:10px;text-align:center}
+.btn{display:inline-block;padding:10px 12px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+.small{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+.qrinfo{font-size:13px;color:#555;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header"><h2 style="margin:6px 0">TraceMyMeal — Product Trace Summary</h2></div>
+  <p class="small">Thanks for scanning. Tap any product below to view full traceability records, lab reports and chain-of-custody for the certified batches.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Cassava Flour</h3>
+      <p class="small">TCBN-NG-CF-RIV-4412-2025 — Premium cassava flour</p>
+      <a class="btn" href="./cassava-flour.html">View full trace</a>
+    </div>
+
+    <div class="card">
+      <h3>Palm Oil</h3>
+      <p class="small">TCBN-NG-PO-AKIB-9921-2025 — Cold-pressed refined palm oil</p>
+      <a class="btn" href="./palm-oil.html">View full trace</a>
+    </div>
+
+    <div class="card">
+      <h3>Plantain Chips</h3>
+      <p class="small">TCBN-NG-PC-AKIB-7732-2025 — Spicy vacuum-packed plantain chips</p>
+      <a class="btn" href="./plantain-chips.html">View full trace</a>
+    </div>
+
+    <div class="card">
+      <h3>Sesame Seeds</h3>
+      <p class="small">TCBN-NG-SS-KANO-5589-2025 — Natural white sesame seeds</p>
+      <a class="btn" href="./sesame-seeds.html">View full trace</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4>How to use</h4>
+    <ul class="small">
+      <li>Point the product QR to the exact file URL. Example: <code>https://yourusername.github.io/tracemymeal-demo/cassava-flour.html</code></li>
+      <li>Use this page for a single QR that lists all products.</li>
+      <li>Replace the placeholder images by uploading to <code>/images/</code> in the repo and updating <code>src</code> paths in pages.</li>
+    </ul>
+    <p class="qrinfo">Need printable QR images? Tell me your final URLs and I’ll generate 300 DPI PNGs for labels with TraceMyMeal branding.</p>
+  </div>
+
+  <div style="text-align:center;margin-top:12px">
+    <small class="small">TraceMyMeal — Demo content for investor pitch. Not an official certificate.</small>
+  </div>
+</div>
+</body>
+</html>
