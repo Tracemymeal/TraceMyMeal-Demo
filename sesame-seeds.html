@@ -46,18 +46,141 @@ body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);
       <p class="small">TraceMyMeal FarmGate Event Hash: <code>g1a9b4f2c3...</code></p>
 
       <hr/>
-      <p><strong>Soil & Sensor Data</strong></p>
+      <h4>Soil & Sensor Data (last logged)</h4>
       <ul class="small">
-        <li>Soil moisture at harvest: <strong>12%</strong></li>
-        <li>Soil pH: <strong>7.0</strong></li>
-        <li>NDVI crop health: <strong>0.91</strong></li>
-        <li>Seed capsule maturity: 92% — field camera 2025-10-05</li>
+        <li>Soil moisture at harvest: <strong>12%</strong> — SoilProbe#KANO-12 (2025-10-09 07:20 UTC)</li>
+        <li>Soil pH: <strong>7.0</strong> — Lab ID: SLB-KANO-1010</li>
+        <li>NDVI crop health: <strong>0.91</strong> — DroneScan#DS-GAYA-1009</li>
+        <li>Seed capsule maturity: <strong>92%</strong> — CameraTrak 2025-10-05</li>
       </ul>
 
       <hr/>
-      <p><strong>Pesticide & Agrochemical Log</strong></p>
+      <h4>Pesticide & Agrochemical Records (immutable)</h4>
       <ul class="small">
-        <li><strong>Lambda Super (Lambda-cyhalothrin)</strong> — 18 Sep 2025 08:22 UTC — pest control — PHI 14d</li>
-        <li><strong>Mancozeb</strong> — 04 Oct 2025 14:01 UTC — fungal prevention — PHI 7d</li>
+        <li><strong>Lambda Super (Lambda-cyhalothrin)</strong> — 18 Sep 2025 08:22 UTC — pest control — PHI 14d — LogID: PEST-GAYA-0918</li>
+        <li><strong>Mancozeb</strong> — 04 Oct 2025 14:01 UTC — fungal prevention — PHI 7d — LogID: PEST-GAYA-1004</li>
       </ul>
-      <p class="small">AI residue forecast: <strong>Within safe limits</strong>. Final lab-confirm
+      <p class="small">AI residue forecast: <strong>Within safe limits</strong>. Final lab-confirmed residues available in QA report (see Processing & QA).</p>
+
+      <hr/>
+      <h4>Harvest Details</h4>
+      <p class="small">Date: <strong>2025-10-10</strong> • Yield: <strong>4,200 kg</strong> • Moisture at harvest: <strong>12%</strong> • Field grader: <strong>FG-Unit-Kano-03</strong></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>2. Processing & Quality Assurance</h3>
+    <div class="tracebox small">
+      <p><strong>Processor:</strong> SaharaClean Sesame Processing — NAFDAC: 19-2240 — Facility ID: SC-KANO-2240</p>
+      <p><strong>Processing Timeline (blockchain-anchored)</strong></p>
+      <ul class="small">
+        <li>12 Oct 2025 08:30 UTC — Arrival & Cleaning (Airflow stable)</li>
+        <li>13 Oct 2025 09:00 UTC — Drying & Moisture reduction (12% → 9.0%)</li>
+        <li>14 Oct 2025 11:00 UTC — Winnowing & Optical sorting — Purity: 98.3%</li>
+        <li>15 Oct 2025 13:00 UTC — Optional Roasting (140°C) — RoastingFlag: FALSE</li>
+        <li>18 Oct 2025 10:00 UTC — Final packing — Final moisture: <strong>7.5%</strong></li>
+      </ul>
+
+      <h4>Lab QA Results</h4>
+      <ul class="small">
+        <li>Aflatoxin (Total): <strong>1.2 ppb</strong> — LabRef: LR-SC-2025-1019-07</li>
+        <li>Oil content: <strong>48%</strong></li>
+        <li>Foreign matter: <strong>0.18%</strong></li>
+        <li>Microbial load: <strong>Pass</strong> — Total Plate Count within spec</li>
+      </ul>
+
+      <p class="small"><strong>DNA batch authenticity:</strong> Sesamum indicum — Kano ecotype — <strong>PASS</strong> (DNARef: DNA-KANO-5589)</p>
+      <p class="small">Packaging: 25 kg food-grade sacks (PE-lined) — Sustainability score: <strong>81/100</strong></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>3. Logistics & Movement</h3>
+    <div class="tracebox small">
+      <p><strong>Transporter:</strong> KanoAgro Freight — Truck ID: <strong>KAF-8821</strong> — Driver: Musa Abubakar</p>
+      <p><strong>Container / Seal:</strong> ContainerID: <strong>KAF-CTN-5589</strong> — Seal: <strong>SES-SEAL-8821</strong></p>
+      <p class="small">Environmental logs during transit: Humidity: <strong>22%</strong> — Temperature range: <strong>24–30°C</strong> — Shock events: <strong>1 minor (below threshold)</strong></p>
+      <p class="small">Route (GPS trace): Gaya → Kano → Kaduna → Lagos (Apapa) — TripRef: TRIP-KAF-5589-10</p>
+      <p class="small">Transport blockchain logs: ShipHash: <code>5b7c9fa1d2…</code></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>4. Export Compliance & Certificates</h3>
+    <div class="tracebox small">
+      <p>Phytosanitary Certificate: <strong>PSC–NG–SES–5589</strong> — Issued: 2025-10-20 — CertRef: PSC-5589-1020</p>
+      <p>Certificate of Origin: <strong>COO–KANO–5589</strong></p>
+      <p>EU Aflatoxin Compliance Report: <strong>PASS</strong> — LabRef: EU-LR-SES-2025-11</p>
+      <p class="small">TraceMyMeal Audit: <strong>TCBN Verified</strong> — AuditRef: TMAUD-5589-2025</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>5. Buyer & Shelf Information</h3>
+    <div class="tracebox small">
+      <p>Importer: <strong>Al-Madina Trade Dubai</strong> — Distributor: Gulf Sesame Traders — Retailer: Lulu Hypermarket</p>
+      <p>Batch shelf life: <strong>18 months</strong> — Best before: <strong>Oct 2026</strong></p>
+      <p class="small">SKU (demo): <code>SS-KANO-25KG-5589</code></p>
+    </div>
+  </div>
+
+  <div class="card" id="json">
+    <h3>Machine-readable JSON</h3>
+    <div class="pre">
+{
+  "tcbn":"TCBN-NG-SS-KANO-5589-2025",
+  "product":"Sesame Seeds",
+  "batch_id":"SS-KANO-GAY-1101-05",
+  "harvest_date":"2025-10-10",
+  "origin":"Gaya, Kano State, Nigeria",
+  "qa":{
+    "aflatoxin_ppb":"1.2",
+    "moisture":"7.5%",
+    "oil_content":"48%",
+    "dna_auth":"PASS"
+  },
+  "logistics":{
+    "truck":"KAF-8821",
+    "container":"KAF-CTN-5589",
+    "seal":"SES-SEAL-8821",
+    "route":"Gaya → Kano → Kaduna → Lagos"
+  },
+  "certifications":[
+    "PSC–NG–SES–5589",
+    "COO–KANO–5589",
+    "NAFDAC 19-2240"
+  ]
+}
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>6. Sustainability & Impact</h3>
+    <div class="tracebox small">
+      <p>Carbon footprint: <strong>0.62 kg CO₂e / kg</strong></p>
+      <p>Water footprint: <strong>340 L / kg</strong></p>
+      <p>Husk reuse: <strong>99%</strong> (animal feed / biomass)</p>
+      <p>Social impact: Farmers supported: <strong>56</strong> • Women: <strong>21</strong> • Youth trained: <strong>18</strong></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Visual Story (demo images)</h3>
+    <div class="small">Placeholders below — replace these images by uploading to <code>/images/</code> and updating the <code>src</code> paths.</div>
+    <div class="imgwrap" style="margin-top:10px">
+      <img src="images/sesame-farm.jpg" alt="Sesame farm — Gaya" />
+      <img src="images/sesame-processing.jpg" alt="Sesame processing — SaharaClean" />
+    </div>
+  </div>
+
+  <div class="card small">
+    <p><strong>Blockchain Event Hashes (sample):</strong></p>
+    <p class="pre">HarvestHash: 7c3b1adae9…  • ProcessHash: 2d99c341b4…  • ShipHash: 5b7c9fa1d2…</p>
+  </div>
+
+  <div style="text-align:center;margin-top:16px">
+    <a class="btn" href="qr-landing.html">Back to QR Landing</a>
+  </div>
+</div>
+</body>
+</html>
